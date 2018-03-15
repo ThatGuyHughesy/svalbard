@@ -35,7 +35,7 @@
         (seed->letter-pairings)
         (revert-rules)
         (letter-pairings->seed)
-        (revert-seeding (+ current-generation 1) generations))
+        (recur (+ current-generation 1) generations))
     seed))
 
 (-> debug-output
